@@ -3,12 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>javascript 예제</title>
-	<link rel="stylesheet" type="text/css" href="css/example.css">
-	<script type="text/javascript" src="js/example.js"></script>
+	<script type="text/javascript">
+		function setRed() {
+			var temp = document.getElementById('text');
+				temp.style.color = 'red';
+			}
+	</script>
 </head>
 <body>
-	<h1>자바스크립트 맛보기 예제</h1>
-	<p>이것은 자바스크립트 예제입니다.</p>
-	<button onclick="change()">버튼</button>
+	<h1 id="text">안녕하세요</h1>
+	<h1 class="text">안녕하세요</h1>
+	<h1>안녕하세요</h1>
+	<button onclick="setRed()">버튼</button>
 </body>
 </html>
