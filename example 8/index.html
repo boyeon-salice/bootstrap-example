@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>자바 스크립트 jQuery HTML</title>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<button id="button1">브어튼1</button>
+	<button id="button2">button2</button>
+	<ol>
+	</ol>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button1").click(function(){
+				$("ol").append("<li>원소</li>");
+			});
+			$("#button2").click(function(){
+				$("ol").after("<h1>리스트</h1>");
+			});
+		});
+	</script>
+</body>
+</html>

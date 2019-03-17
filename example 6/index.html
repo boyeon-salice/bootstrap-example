@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery 예제</title>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<input class="input" type="text">
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".input").keypress(function() {
+				alert('입력했습니다.');
+			});
+		});
+	</script>
+</body>
+</html>

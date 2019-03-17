@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>자바 스크립트 jQuery HTML</title>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <style type="text/css">
+  	.blue {
+  		color:blue;
+  	}
+  </style>
+</head>
+<body>
+	<button id="button">브어튼1</button>
+	<p>보연이가 짱해</p>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button").click(function(){
+				$("p").css("background-color", "blue");
+			});
+		});
+	</script>
+</body>
+</html>
